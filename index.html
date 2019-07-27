@@ -33,7 +33,7 @@
 
   </style>
 
-</head>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 </html>
 
@@ -170,8 +170,38 @@
 
                 <div class="article-entry" itemprop="articleBody">
 
-                  <img src="/2019/07/27/my-pass/champions.png"
+                  <link rel="stylesheet" class="aplayer-secondary-style-marker"
+                                                                                                  href="/assets/css/APlayer.min.css">
+                  <script src="/assets/js/APlayer.min.js"
+                                                                                                  class="aplayer-secondary-script-marker">
+                  </script><img src="/2019/07/27/my-pass/champions.png"
                                                                                                   title="This is an example image">
+                  <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark"
+                                                                                                  style="margin-bottom: 20px;">
+                  </div>
+                  <script>
+                    (function() {
+                      var player = new DPlayer({
+                        "container": document.getElementById("dplayer0"),
+                        "theme": "#FADFA3",
+                        "loop": true,
+                        "video": {
+                          "url": "http://home.ustc.edu.cn/~mmmwhy/GEM.mp4",
+                          "pic": "http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"
+                        }
+                      });
+                      window.dplayers || (window.dplayers = []);
+                      window.dplayers.push(player);
+                    })()
+
+                  </script>
+
+                  <script>
+                    console.error(
+                      "Error: [hexo-tag-aplayer] Unrecognized tag argument(2): autoplay=false"
+                    );
+
+                  </script>
 
                 </div>
                 <div class="article-info article-info-index">
@@ -226,6 +256,11 @@
 
                 <div class="article-entry" itemprop="articleBody">
 
+                  <link rel="stylesheet" class="aplayer-secondary-style-marker"
+                                                                                                  href="/assets/css/APlayer.min.css">
+                  <script src="/assets/js/APlayer.min.js"
+                                                                                                  class="aplayer-secondary-script-marker">
+                  </script>
                   <p>Welcome to <a href="https://hexo.io/" target="_blank"
                                                                                                     rel="noopener">Hexo</a>!
                     This is your very first post.

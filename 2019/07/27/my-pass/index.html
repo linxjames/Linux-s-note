@@ -11,17 +11,23 @@
   <title>my pass | 梁晓辉的博客</title>
   <meta name="viewport"
                                                                                   content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+                                                                                  content="(function() {     var player = new DPlayer({       &quot;container&quot;: document.getElementById(&quot;dplayer0&quot;),       &quot;theme&quot;: &quot;#FADFA3&quot;,       &quot;loop&quot;: true,       &quot;video&quot;: {         &quot;url&quot;: &quot;http://home.us">
   <meta property="og:type" content="article">
   <meta property="og:title" content="my pass">
   <meta property="og:url"
                                                                                   content="http://xzlxh.club/2019/07/27/my-pass/index.html">
   <meta property="og:site_name" content="梁晓辉的博客">
+  <meta property="og:description"
+                                                                                  content="(function() {     var player = new DPlayer({       &quot;container&quot;: document.getElementById(&quot;dplayer0&quot;),       &quot;theme&quot;: &quot;#FADFA3&quot;,       &quot;loop&quot;: true,       &quot;video&quot;: {         &quot;url&quot;: &quot;http://home.us">
   <meta property="og:locale" content="default">
   <meta property="og:image"
                                                                                   content="http://xzlxh.club/2019/07/27/my-pass/champions.png">
-  <meta property="og:updated_time" content="2019-07-27T04:02:35.132Z">
+  <meta property="og:updated_time" content="2019-07-27T04:32:10.515Z">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="my pass">
+  <meta name="twitter:description"
+                                                                                  content="(function() {     var player = new DPlayer({       &quot;container&quot;: document.getElementById(&quot;dplayer0&quot;),       &quot;theme&quot;: &quot;#FADFA3&quot;,       &quot;loop&quot;: true,       &quot;video&quot;: {         &quot;url&quot;: &quot;http://home.us">
   <meta name="twitter:image"
                                                                                   content="http://xzlxh.club/2019/07/27/my-pass/champions.png">
 
@@ -39,7 +45,7 @@
 
   </style>
 
-</head>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 </html>
 
@@ -175,8 +181,38 @@
 
                 <div class="article-entry" itemprop="articleBody">
 
-                  <img src="/2019/07/27/my-pass/champions.png"
+                  <link rel="stylesheet" class="aplayer-secondary-style-marker"
+                                                                                                  href="/assets/css/APlayer.min.css">
+                  <script src="/assets/js/APlayer.min.js"
+                                                                                                  class="aplayer-secondary-script-marker">
+                  </script><img src="/2019/07/27/my-pass/champions.png"
                                                                                                   title="This is an example image">
+                  <div id="dplayer0" class="dplayer hexo-tag-dplayer-mark"
+                                                                                                  style="margin-bottom: 20px;">
+                  </div>
+                  <script>
+                    (function() {
+                      var player = new DPlayer({
+                        "container": document.getElementById("dplayer0"),
+                        "theme": "#FADFA3",
+                        "loop": true,
+                        "video": {
+                          "url": "http://home.ustc.edu.cn/~mmmwhy/GEM.mp4",
+                          "pic": "http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"
+                        }
+                      });
+                      window.dplayers || (window.dplayers = []);
+                      window.dplayers.push(player);
+                    })()
+
+                  </script>
+
+                  <script>
+                    console.error(
+                      "Error: [hexo-tag-aplayer] Unrecognized tag argument(2): autoplay=false"
+                    );
+
+                  </script>
 
                   <div class="page-reward">
                     <a href="javascript:;" class="page-reward-btn tooltip-top">
